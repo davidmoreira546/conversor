@@ -7,7 +7,9 @@ def converter_video():
     arquivo = input(" ")
     print('formado\nmov\nmp4\nmp3\nts')
     tipo =  input(" ")
-    os.rename(f'{arquivo}.{tipo}' )
+    print = ('qual o novo nome do arquivo?')
+    nome = input(' ')
+    os.rename(arquivo,f'{nome}.{tipo}' )
     print('arquivo convertido')
 
 while True:
